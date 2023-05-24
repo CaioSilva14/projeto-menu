@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family= Noto +Sans & display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.login-principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: #14414f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda-login > h1{
+    color: #34cefd;
+    font-size: 2vw;
+}
+
+.imagem{
+    width: 35vw;
+}
+
+.direita-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartao-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background-color: #457280;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.458);
+}
+
+.cartao-login > h1{
+    color: #34cefd;
+    font-weight: 800;
+    margin: 0;
+}
+
+.campo-texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.campo-texto > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.campo-texto > label{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.campo-texto > input::placeholder{
+    color: black;
+}
+
+.botao-login{
+    width: 50%;
+    margin: 25px;
+    padding: 16px 0px;
+    border-radius: 20px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.371);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px){
+    .cartao-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .login-principal{
+        flex-direction: column;
+    }
+    .esquerda-login > h1{
+        display: none;
+    }
+    .esquerda-login{
+        width: 100%;
+        height: auto;
+    }
+    .direita-login{
+        width: 100%;
+        height: auto;
+    }
+    .imagem{
+        width: 90%;
+    }
+}
